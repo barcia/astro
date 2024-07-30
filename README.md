@@ -16,7 +16,7 @@
 
 
 ```sh
-npm create barcia@astro
+npm create astro@latest ./ -- --template barcia/astro
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
