@@ -1,0 +1,19 @@
+{
+  "name": "@barcia/astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:host": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.2",
+    "@barcia/corecss": "^6.1.0",
+    "astro": "^4.12.2",
+    "typescript": "^5.5.4"
+  }
+}
