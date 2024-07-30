@@ -8,7 +8,7 @@
 	- Create the list page
 	- Create the post page
 - Create some basic common components (Head, Navbar, Footer, FormattedDate, etc.)
-- Create an *Icon* component to easy import inline SVG icons
+- Create an Icon component to easily import inline SVG icons
 - Add 404 page
 - Add task `dev:host`
 - Add some utility functions
