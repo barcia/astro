@@ -1,48 +1,22 @@
-# Astro Starter Kit: Minimal
+# Astro Starter Kit
 
-
-- Add barcia core css
-- create basic layout
-- configure alias @ to src/
-- add dev:host task
-- create basic collectio (blog)
-	- list page
-	- post page
-- Basic components
-- Icon component
-- 404 page
-- add some utils functions
-
+## ¿What changes from the minimal official Astro template?
+- Add [@barcia/corecss](https://github.com/barcia/corecss)
+- Contigure alias to import from `/src/` with `@/`
+- Create a basic layout
+- Create a basic collection (blog)
+	- Create the list page
+	- Create the post page
+- Create some basic common components (Head, Navbar, Footer, FormattedDate, etc.)
+- Create an *Icon* component to easy import inline SVG icons
+- Add 404 page
+- Add task `dev:host`
+- Add some utility functions
 
 
 ```sh
 npm create astro@latest ./ -- --template barcia/astro
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -52,6 +26,7 @@ All commands are run from the root of the project, from a terminal:
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run dev:host`        | Starts local dev server at `localhost:4321` with host in LAN |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
