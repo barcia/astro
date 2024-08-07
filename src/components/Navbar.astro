@@ -22,7 +22,7 @@ const menu = [
 
 	<details class="menu-mobile">
 		<summary aria-label="Menu">
-			<Icon name='menu' />
+			<Icon name='menu'/>
 		</summary>
 		<ul>
 			{menu.map((item) => (
@@ -35,11 +35,19 @@ const menu = [
 </nav>
 
 <style>
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
 	.is-active {
 		font-weight: bold;
 	}
 
 	.menu-desktop {
+		display: flex;
+		gap: 1rem;
 		@media (width < 768px) {
 			display: none;
 		}
@@ -51,9 +59,5 @@ const menu = [
 		}
 	}
 
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
+
 </style>
