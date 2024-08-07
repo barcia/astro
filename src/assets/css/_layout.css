@@ -34,9 +34,3 @@
 	padding-inline: var(--container-padding-inline);
 	max-width: calc(var(--viewport-md) + var(--container-padding-inline) * 2);
 }
-
-.Wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100dvh;
-}
