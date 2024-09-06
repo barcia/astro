@@ -1,12 +1,12 @@
 ---
-import Layout from "@/layouts/Root.astro"
-import { concatRelativeUrls, getBlogCollection } from "@/utils"
+import Layout from '@/layouts/Root.astro'
+import { concatRelativeUrls, getBlogCollection } from '@/utils'
 
 const posts = await getBlogCollection()
 
 const page = {
-	title: "Blog",
-	description: "Blog description",
+	title: 'Blog',
+	description: 'Blog description'
 }
 ---
 
@@ -18,16 +18,25 @@ const page = {
 	<section>
 		<h2>Latest posts</h2>
 		<ul>
-			{posts.map((post) => (
-				<li>
-					<article>
-						<header>
-							<h3><a href={concatRelativeUrls(Astro.url.pathname, post.slug)} data-astro-prefetch>{post.data.title}</a></h3>
-						</header>
-						<p>{post.data.summary}</p>
-					</article>
-				</li>
-			))}
+			{
+				posts.map((post) => (
+					<li>
+						<article>
+							<header>
+								<h3>
+									<a
+										href={concatRelativeUrls(Astro.url.pathname, post.slug)}
+										data-astro-prefetch
+									>
+										{post.data.title}
+									</a>
+								</h3>
+							</header>
+							<p>{post.data.summary}</p>
+						</article>
+					</li>
+				))
+			}
 		</ul>
 	</section>
 </Layout>
@@ -42,7 +51,7 @@ const page = {
 			color: inherit;
 
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				inset: 0;
 			}

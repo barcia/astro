@@ -1,11 +1,11 @@
 ---
 import { SITE } from '@/consts'
 
-import "@barcia/corecss/dist/core.css"
-import "@/assets/css/index.css"
-import Head from "@/components/Head.astro"
-import Navbar from "@/components/Navbar.astro"
-import Footer from "@/components/Footer.astro"
+import '@barcia/corecss/dist/core.css'
+import '@/assets/css/index.css'
+import Head from '@/components/Head.astro'
+import Navbar from '@/components/Navbar.astro'
+import Footer from '@/components/Footer.astro'
 
 interface Props {
 	title?: string
@@ -30,9 +30,9 @@ const { title = SITE.title, description = SITE.description } = Astro.props
 </html>
 
 <style>
-.Wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100dvh;
-}
+	.Wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+	}
 </style>

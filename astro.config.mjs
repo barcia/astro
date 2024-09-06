@@ -1,8 +1,8 @@
-import { defineConfig } from 'astro/config';
-import { SITE } from './src/consts.ts';
+import { defineConfig } from "astro/config";
+import { SITE } from "./src/consts.ts";
 
 // https://astro.build/config
 export default defineConfig({
-	site: SITE.url,
-	prefetch: true,
+  site: SITE.url,
+  prefetch: true,
 });
